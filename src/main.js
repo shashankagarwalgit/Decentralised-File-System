@@ -5,7 +5,7 @@ const { fileCID } = require("./filecid");
 
 const filesData = new Blockchain();
 //test
-const files = ['./note.txt','./genesis.dat']; //file names
+const files = ['./src/genesis.dat']; //file names
 
 const hexDigests = [];
 
