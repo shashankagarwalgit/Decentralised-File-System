@@ -1,0 +1,9 @@
+const genesis = {
+    "blockNo": 0,
+    "created": "14/12/2023 2:23PM :: Shashank Agarwal",
+    "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "74a030aa0aad9d2887e9a85c3f2233a73652b22e12751a1158d0ed8a6ca844a6",
+    "nonce1": 0
+};
+
+exports.genesis = genesis;
