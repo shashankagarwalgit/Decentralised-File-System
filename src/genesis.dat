@@ -1,9 +1,10 @@
 const genesis = {
-    "blockNo": 0,
-    "created": "14/12/2023 2:23PM :: Shashank Agarwal",
-    "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
-    "hash": "74a030aa0aad9d2887e9a85c3f2233a73652b22e12751a1158d0ed8a6ca844a6",
-    "nonce1": 0
+        "fileCID": "Null",
+        "filename": "Null",
+        "prevHash": "0x64",
+        "hash": "586093fcedfc62fb95a61e0a0030f664bc8afdd8477a47b96d867c3be9e753a2",
+        "timestamp": "Sun Mar 10 2024 16:14:30 GMT+0530 (India Standard Time)",
+        "nonce1": 0
 };
 
 exports.genesis = genesis;

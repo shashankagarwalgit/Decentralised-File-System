@@ -19,7 +19,7 @@ async function processFiles() {
   }
 
   for (let j = 0; j < files.length; j++) {
-    filesData.addBlock(new Block(j + 1, files[j].substring(2, files[j].length), fileCID(hexDigests[files[j]])));
+    filesData.addBlock(new Block(files[j].substring(2, files[j].length), fileCID(hexDigests[files[j]])));
   }
  
   console.log("Is Chain Valid? ", filesData.isChainValid());

@@ -1,9 +1,9 @@
 const SHA256 = require('crypto-js/sha256');
+const crypto = require("crypto");
 const genesis = require('./genesis.dat');
 
 class Block{
-    constructor(blockNo ,filename, fileCID , prevHash=''){
-        this.blockNo = blockNo;
+    constructor(filename, fileCID , prevHash=''){
         this.fileCID = fileCID;
         this.filename = filename;
         this.prevHash = prevHash;
@@ -13,7 +13,7 @@ class Block{
     }
 
     calculateHash(){
-        return SHA256(this.blockNo + this.filename + this.prevHash + this.fileCID + this.nonce1).toString();
+        return SHA256(this.filename + this.prevHash + this.fileCID + this.nonce1).toString();
     }
 
     hexToBinary(hex) {
@@ -31,7 +31,7 @@ class Block{
 class Blockchain{
     constructor(){
         this.chain = [genesis.genesis];
-        this.difficulty = 9;
+        this.difficulty = 8;
     }
     
     getLatestBlock(){
